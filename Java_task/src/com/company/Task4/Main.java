@@ -1,9 +1,9 @@
-package com.company;
+package com.company.Task4;
 
 public class Main {
 
     public static void main(String[] args) {
-        //Example
+       //Example
         Student st1 = new Student("Ann", 10);
         Student st2 = new Student("Max", 20);
         Student st3 = new Student("Tony", 30);
@@ -23,13 +23,15 @@ public class Main {
         System.out.println(p3.toString());
         System.out.println(p4.toString());
         System.out.println(p5.toString());
+
+        //Homework
+        Employee e1 = new Employee("Jon", 5);
+        Employee e2 = new Employee("Ted", 5);
+        Employee e3 = new Employee("Andy", 5);
+
+
     }
 
-    //Homework
-    Employee e1 = new Employee("Jon", 5);
-    Employee e2 = new Employee("Ted", 5);
-    Employee e3 = new Employee("Andy", 5);
-    //Employee e4= new Employee();
-    // e3.setName("hjh");
+
 
 }

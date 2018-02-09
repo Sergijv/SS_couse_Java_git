@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Task4;
 
 public  class Student {
     private String name;

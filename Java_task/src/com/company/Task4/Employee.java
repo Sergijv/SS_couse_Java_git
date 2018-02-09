@@ -1,12 +1,14 @@
-package com.company;
+package com.company.Task4;
 
 class Employee {
 
     private String name;
-      public String getName() {return name;}
-      public void setName(String name) {
-          this.name = name;
-      }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     private int rate;
       public int getRate() { return rate;}

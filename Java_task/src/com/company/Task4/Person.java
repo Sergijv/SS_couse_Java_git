@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Task4;
 
 
 import java.text.SimpleDateFormat;
@@ -20,18 +20,24 @@ class Person {
     public int getBirthYear() {
         return birthYear;
     }
-
+    int age;
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
+        age=getRealAge(birthYear);
     }
-    // next line always birthYear=0 why?
-    private int age=year-birthYear;
+
     public Person() {    }
 
     public Person(String name, int birthYear) {
         this.name = name;
         this.birthYear = birthYear;
+        this.age=year-birthYear;
     }
+
+    public int getRealAge(int birthYear) {
+        int age=year-birthYear;
+    return age;}
+
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
