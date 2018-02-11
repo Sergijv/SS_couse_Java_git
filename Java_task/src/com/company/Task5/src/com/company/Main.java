@@ -15,14 +15,38 @@ public class Main {
         Cleaner, Electrician, Lumber, Builder, Engineer, Architect
         }
      public static void main(String[] args) {
-        //HomeWork5
-       //1.Enter the name of the country. Print the name of the continent.
-       //(Declare enum with names of continents)
-        System.out.println("Enter country:");
-        Scanner sc = new Scanner(System.in);
-        String company = sc.next();
-        System.out.println("Your continents is "+Arrays.toString(Continents.values()));
+         //HomeWork5
+         //1.Enter the name of the continent. Print the name of the countries .
+         // (Declare enum with names of continents)
+         System.out.println("Enter continent:"+Arrays.toString(Continents.values()));
+         Scanner sc = new Scanner(System.in);
+        String continent = sc.next();
+        Continents cont = Enum.valueOf(Continents.class,continent);
+        switch (cont){
+            case Asia:
+                System.out.println("Afghanistan, Bahrain, Bangladesh, Bhutan, Brunei, Burma (Myanmar), Cambodia, China, East Timor, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan, Kazakhstan, Korea, North, Korea, South, Kuwait, Kyrgyzstan, Laos, Lebanon, Malaysia, Maldives, Mongolia, Nepal, Oman, Pakistan, Philippines, Qatar, Russian Federation, Saudi Arabia, Singapore, Sri Lanka, Syria, Tajikistan, Thailand, Turkey, Turkmenistan, United Arab Emirates, Uzbekistan, Vietnam, Yemen");
+                break;
+            case Africa:
+                System.out.println("Algeria, Angola, Benin, Botswana, Burkina, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Congo, Congo, Democratic Republic of, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Ivory Coast, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, Sao Tome and Principe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, South Sudan, Sudan, Swaziland, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe");
+                break;
+            case Europe:
+                System.out.println("Albania, Andorra, Armenia, Austria, Azerbaijan, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Georgia, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Macedonia, Malta, Moldova, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Kingdom, Vatican City");
+                break;
+            case Australia:
+                System.out.println("Australia, Fiji, Kiribati, Marshall Islands, Micronesia, Nauru, New Zealand, Palau, Papua New Guinea, Samoa, Solomon Islands, Tonga, Tuvalu, Vanuatu");
+                break;
+            case North_America:
+                System.out.println(" Antigua and Barbuda, Bahamas, Barbados, Belize, Canada, Costa Rica, Cuba, Dominica, Dominican Republic, El Salvador, Grenada, Guatemala, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago, United States");
+                break;
+            case South_America:
+                System.out.println(" Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela");
+                break;
+            case Antarctica:
+                System.out.println("no countries there");
+        }
+
         System.out.println();
+
         //2. Create an array of ten integers. Display the biggest of these numbers;
         int[] arrey = {12, -5, 56, -763, 456, 567, 43, 61, 234, 731};
         System.out.print("Our array: ");

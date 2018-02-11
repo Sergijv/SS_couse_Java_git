@@ -9,11 +9,11 @@ public class Main {
         }
     public static void main(String[] args) {
  //HomeWork5
- /*1.Enter the name of the country. Print the name of the continent.
-  (Declare enum with names of continents)
-        System.out.println("Enter country:");
+ //1.Enter the name of the continent. Print the name of the countries .
+ // (Declare enum with names of continents)
+        System.out.println("Enter continent:");
         Scanner sc = new Scanner(System.in);
-   */
+
  //2. Create an array of ten integers. Display the biggest of these numbers;
        int[] arrey = {12,-5,56,-763,456,567,43,61,234,731}
        int max=arrey[0];
